@@ -1,0 +1,322 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\fnc_scale.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SETTS DIALOGEX 0, 0, 143, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Настройки отображения"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,200,50,14
+    GROUPBOX        " Линия ",IDC_LINE_BOX,1,1,140,58
+    LTEXT           "Ширина",IDC_LINE_WIDTH,10,12,50,11
+    LTEXT           "Стиль1",IDC_LINE_STYLE,10,28,50,11
+    LTEXT           "Цвет1",IDC_LINE_COLOR,10,44,50,11
+    LTEXT           "Фон1",IDC_TEXT_FON,10,64,50,11
+    CONTROL         "",IDC_LINE_WIDTH_COMBO,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,62,10,74,84
+    CONTROL         "",IDC_LINE_STYLE_COMBO,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,62,26,74,84
+    CONTROL         "",IDC_LINE_COLOR_BOX,"Button",BS_OWNERDRAW | WS_TABSTOP,62,42,56,12
+    PUSHBUTTON      "...",IDC_LINE_COLOR_BUTTON,120,42,16,12
+    CONTROL         "",IDC_TEXT_FON_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,64,9,10
+    GROUPBOX        " Длина ",IDC_DISTANCE_BOX,1,76,140,47
+    LTEXT           "Отображать в окне",IDC_DISTANCE_SHOW,8,91,73,11
+    CONTROL         "Check1",IDC_DISTANCE_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,90,9,9
+    LTEXT           "Точность",IDC_DISTANCE_PRECISION,8,105,50,11
+    COMBOBOX        IDC_DISTANCE_PRECISION_COMBO,63,104,74,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        " Площадь  ",IDC_SQUARE_BOX,1,124,140,49
+    LTEXT           "Отображать в окне",IDC_SQUARE_SHOW,8,138,73,11
+    CONTROL         "Check1",IDC_SQUARE_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,137,9,9
+    LTEXT           "Точность",IDC_SQUARE_PRECISION,8,153,50,11
+    COMBOBOX        IDC_SQUARE_PRECISION_COMBO,63,151,74,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Check1",IDC_ALWAYS_LINEAR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,180,9,9
+    LTEXT           "Всегда показывать метр.единицы",IDC_ALWAYS_LINEAR_STATIC,5,180,118,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SCALE               BITMAP                  "res\\scale1.bmp"
+
+IDB_RULERS              BITMAP                  "res\\Start.bmp"
+
+IDB_CLOSED              BITMAP                  "res\\Closed.bmp"
+
+IDB_DISCLOSED           BITMAP                  "res\\Disclosed.bmp"
+
+IDB_DISTANCE            BITMAP                  "res\\Distance.bmp"
+
+IDB_SQUARE              BITMAP                  "res\\Square.bmp"
+
+IDB_SETTINGS            BITMAP                  "res\\settings.bmp"
+
+IDB_START_MEASURING     BITMAP                  "res\\start1.bmp"
+
+IDB_CLEAR               BITMAP                  "res\\clear.bmp"
+
+IDB_TRANSFORM           BITMAP                  "res\\transform.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SETTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 142
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 214
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TARGET              CURSOR                  "Target.cur"
+
+IDC_TARGET_FIN          CURSOR                  "target_fin.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SETTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_FUNCTION_DEFAULT    "Измерения"
+    IDS_MENU                "География\\Измерения\\Геоизмерения"
+    IDS_TOOLBAR             "География"
+    IDS_SCALE_PANEL         "Измерения"
+    IDS_MEASURING           "Измерить"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_PANEL_DISTANCE      "Общая длина"
+    IDC_PANEL_SQUARE        "Площадь"
+    IDC_PANEL_STEP          "Последний сегмент"
+    IDS_START               "Начать измерение"
+    IDS_CLEAR               "Очистить результаты"
+    IDS_TRANSFORM           "Преобразовать в векторный объект"
+    IDS_SHOW_DISTANCE       "Подписывать длину"
+    IDS_SHOW_SQUARE         "Подписывать площадь"
+    IDS_CLOSE_CURVE         "Замыкать последнюю точку с первой"
+    IDS_DISCLOSE_CURVE      "Не замыкать последнюю точку с первой"
+    IDS_SETTINGS            "Настройки отображения"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_END                 "Завершить измерения"
+    IDC_LINEAR_ALWAYS_STATIC "Всегда показывать метр.единицы"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SELECT_UNIT         "Выбрать единицу измерения"
+    IDS_QUADRATNO           "кв."
+    IDS_SELECT_PRECISION_D  "Точность отображения длины"
+    IDS_SELECT_PRECISION_S  "Точность отображения площади"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DIALOG_SETTS        "Настройки отображения"
+    IDC_SHOW                "Подписывать"
+    IDC_PRECISION           "Точность"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_LINE_BOX            " Линия "
+    IDC_LINE_WIDTH          "Ширина"
+    IDC_LINE_STYLE          "Стиль"
+    IDC_LINE_COLOR          "Цвет"
+    IDC_TEXT_FON            "Фон подписи"
+    IDC_DISTANCE_BOX        " Длина "
+    IDC_SQUARE_BOX          " Площадь "
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_FUNCTION_DEFAULT    "Measurements"
+    IDS_MENU                "Geography\\Measurements\\Geomeasurements"
+    IDS_TOOLBAR             "Geography"
+    IDS_SCALE_PANEL         "Measurements"
+    IDS_MEASURING           "Measure"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_PANEL_DISTANCE      "Full length"
+    IDC_PANEL_SQUARE        "Square"
+    IDC_PANEL_STEP          "last segment"
+    IDS_START               "Begin"
+    IDS_CLEAR               "Clear"
+    IDS_TRANSFORM           "Transform to vector"
+    IDS_SHOW_DISTANCE       "Show lenght"
+    IDS_SHOW_SQUARE         "Show square"
+    IDS_CLOSE_CURVE         "Close last point to first"
+    IDS_DISCLOSE_CURVE      "Don't close last point to first"
+    IDS_SETTINGS            "Settings"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_END                 "Stop all measurings"
+    IDC_LINEAR_ALWAYS_STATIC "Always show linear units"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SELECT_UNIT         "Select units"
+    IDS_QUADRATNO           "sq."
+    IDS_SELECT_PRECISION_D  "Length precision"
+    IDS_SELECT_PRECISION_S  "Square precision"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DIALOG_SETTS        "Settings"
+    IDC_SHOW                "Show"
+    IDC_PRECISION           "Precision"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_LINE_BOX            " Line "
+    IDC_LINE_WIDTH          "Width"
+    IDC_LINE_STYLE          "Style"
+    IDC_LINE_COLOR          "Color"
+    IDC_TEXT_FON            "Backlight"
+    IDC_DISTANCE_BOX        " Length "
+    IDC_SQUARE_BOX          " Square "
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\fnc_scale.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

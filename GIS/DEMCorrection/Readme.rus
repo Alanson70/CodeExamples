@@ -1,0 +1,16 @@
+DEM Correction - Digital Elevention Model Correction - Коррекция Цифровой Модели Рельфа
+
+Представленные исходные файлы являются составляющей программного обеспечения настольной ГИС 
+и реализуют модуль отображения векторных объектов в виде рельефных изображений. 
+В основе работы модуля - приведение объектов к полиномам, последующее разбиение на треугольники (триангуляция) с интерполяцией уровней вершин 
+по имеющимся или рассчитанным точкам полиномов, заливка треугольников на основе уровней их вершин. 
+Помимо этого в модуле предусмотрено отображение буферных зон для обеспечения плавности переходов, 
+различные способы задания высот, а также обратная задача - получение уровней для векторных объектов на основе изображения.
+
+(Translated by Yandex)
+The source files provided are part of the desktop GIS software package.
+They implement a module displaying vector objects in the form of relief images. 
+The work of the module is based on the reduction of objects to polynomials, the subsequent division into triangles (triangulation) with interpolation of vertex levels 
+according to the available or calculated points of polynomials, shading triangles based on the levels of their peaks. 
+In addition, the module provides a display of buffer zones to ensure smooth transitions, 
+different ways of setting heights, as well as the inverse problem - to obtain levels for vector objects based on the image.

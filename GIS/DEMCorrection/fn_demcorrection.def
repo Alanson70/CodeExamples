@@ -1,0 +1,9 @@
+; fn_demcorrection.def : Declares the module parameters for the DLL.
+
+LIBRARY
+
+EXPORTS
+    ; Explicit exports can go here
+
+	IC_Identify @101
+	IC_IdentifyFunction @102
