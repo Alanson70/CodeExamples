@@ -9,6 +9,9 @@
 * Платформа и среда разработки
 
 OC Windows (Win32)
+
 C++ (частично С++11, boost)
+
 MS Visual Studio (Win32)
+
 Библиотека Xercesc
