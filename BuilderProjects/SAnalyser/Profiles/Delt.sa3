@@ -1,0 +1,120 @@
+[Commands]
+c0=session 1 1 72100 10 100
+Count=20
+c1=session 1 1 79100 10 100
+c2=session 1 1 79000 100 200
+c3=session 1 1 79000 10 800
+c4=session 1 1 79100 1 800
+c5=session 1 1 79100 1 400
+c6=session 1 0 72000 5 400
+c7=session 3 1 72000 5 20
+c8=session 3 1 72000 5 100
+c9=session 3 1 72000 5 400
+c10=session 3 0 72000 5 400
+c11=session 3 0 72000 1 20
+c12=session 2 1 72000 1 20
+c13=session 2 1 72000 1 400
+c14=session 2 1 72000 1 50
+c15=session 2 1 72000 1 10
+c16=session 2 0 72000 1 10
+c17=session 2 1 72000 1 500
+c18=session 1 0 72000 1 500
+c19=session 6 0 72000 1 500
+[Defaults]
+TtyName=COM1
+TtyRate=19200
+TtyParity=Odd
+TTY=0
+IpAddr=175.0.0.9
+IpPort=8000
+Protocol=0
+AdditionSending=2
+AdditionReceiving=2
+StringEndSending=0
+StringEndReceiving=0
+Echo=1
+Left=169
+Top=97
+Width=1382
+Height=822
+Prefix=1 OptionalDevice1
+SendPrefix=
+AutoConnect=1
+[Band]
+UserMinFreq=50000
+UserNaxFreq=50000
+Index=0
+[Freq]
+TabIndex=0
+RatioIndex=2
+Left=769
+Right=847
+[Qual]
+Step=25
+Count=312
+RadioIndex=2
+Index=3
+[View]
+BeamWidth=0
+BeamFading=4
+BeamSingle=1
+[Work]
+Cont=0
+Int=1
+Once=0
+Interval=5
+[Level]
+AutoFit=0
+Amp=10
+Center=-87
+[Beam]
+Width=2
+Fading=3
+Single=1
+Shadow=0
+Refresh=1
+[Colors]
+FonColor=3
+FonGradient=1
+BeamColor=4
+BeamInverse=0
+GridColor=1
+GridColorAdapt=0
+GridColorNo=0
+LegendXColor=19
+LegendYColor=19
+LegendColorAdapt=0
+GridSplash=0
+[FreqPlan]
+Name=ЧП Концерн 2015.cfg
+AutoLoad=1
+AutoSave=1
+LineWidth=1
+LineColor=12639424
+NameColor=15780518
+[Recording]
+IntervalCheck=1
+Interval=1
+Div=10
+IntervalFactor=1
+DivFactor=1
+MaxCount=8000
+ToCSV=0
+ToSA4=1
+ToJPEG=0
+[Connect]
+TtyName=COM1
+TtyRate=19200
+TtyParity=Odd
+TermType=1
+AutoConnect=0
+IpAddr=10.15.250.12
+IpPort=8000
+Protocol=0
+AdditionSending=2
+AdditionReceiving=2
+StringEndSending=0
+StringEndReceiving=0
+PrefixRec=1 OptionalDevice1
+PrefixSend=1 OptionalDevice1
+DoConnect=1

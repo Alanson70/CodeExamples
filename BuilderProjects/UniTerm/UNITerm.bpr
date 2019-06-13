@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="UNITerm.exe"/>
+    <OBJFILES value="UNITerm.obj ControlFormUnit.obj MainFormUnit.obj TerminalFormUnit.obj 
+      AboutFormUnit.obj ParamsFormUnit.obj ..\Functions\Functions.obj 
+      ..\Connections\TcpClient.obj ..\Connections\TtyClient.obj 
+      ..\Connections\UdpClient.obj ..\Connections\WinTtyDefs.obj 
+      ..\Connections\LinkUnit.obj ..\Functions\ApiFunctionsUnit.obj 
+      ..\Connections\LinksConnectorUnit.obj ..\Connections\ControlClientUnit.obj 
+      ..\Connections\ControlClientFormUnit.obj ..\Connections\Client.obj"/>
+    <RESFILES value="UNITerm.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ControlFormUnit.dfm MainFormUnit.dfm TerminalFormUnit.dfm 
+      AboutFormUnit.dfm ParamsFormUnit.dfm 
+      ..\Connections\ControlClientFormUnit.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclx.lib nmfast.lib inet.lib vclAbsDBb6.lib bdertl.lib vcldb.lib dbrtl.lib 
+      rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib vcldb.lib bdertl.lib vclAbsDBb6.lib inet.lib 
+      nmfast.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb97axserver.bpi vclAbsDBb6.bpi"/>
+    <PATHCPP value=".;..\Functions;..\Connections;..\Connections;..\Connections;..\Connections;..\Connections;..\Functions;..\Connections;..\Connections;..\Connections;..\Connections"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="UNITerm.cpp"/>
+    <INCLUDEPATH value="..\Connections;..\Functions;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\..\Connections;..\SAnalyser;..\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\Connections;..\Functions;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\..\Connections;..\SAnalyser;..\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib&quot;;&quot;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I..\..\Connections 
+      -I..\SAnalyser -I..\UniTerm -I..\..\2015\SAnalyser -I..\..\2008\Functions 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="UNITerm.res" FORMNAME="" UNITNAME="UNITerm.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UNITerm.cpp" FORMNAME="" UNITNAME="UNITerm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ControlFormUnit.cpp" FORMNAME="ControlForm" UNITNAME="ControlFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MainFormUnit.cpp" FORMNAME="MainForm" UNITNAME="MainFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TerminalFormUnit.cpp" FORMNAME="TerminalForm" UNITNAME="TerminalFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AboutFormUnit.cpp" FORMNAME="AboutForm" UNITNAME="AboutFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ParamsFormUnit.cpp" FORMNAME="ParamsForm" UNITNAME="ParamsFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Functions\Functions.cpp" FORMNAME="" UNITNAME="Functions" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\TcpClient.cpp" FORMNAME="" UNITNAME="TcpClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\TtyClient.cpp" FORMNAME="" UNITNAME="TtyClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\UdpClient.cpp" FORMNAME="" UNITNAME="UdpClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\WinTtyDefs.cpp" FORMNAME="" UNITNAME="WinTtyDefs.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\LinkUnit.cpp" FORMNAME="" UNITNAME="LinkUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Functions\ApiFunctionsUnit.cpp" FORMNAME="" UNITNAME="ApiFunctionsUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\LinksConnectorUnit.cpp" FORMNAME="" UNITNAME="LinksConnectorUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\ControlClientUnit.cpp" FORMNAME="" UNITNAME="ControlClientUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\ControlClientFormUnit.cpp" FORMNAME="ControlClientForm" UNITNAME="ControlClientFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\Client.cpp" FORMNAME="" UNITNAME="Client" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=3
+Release=2
+Build=5
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=Shaposhnikov A.A.
+FileDescription=Terminal's Program
+FileVersion=1.3.2.5
+InternalName=UniTerm
+LegalCopyright=Shaposhnikov A.A.
+LegalTrademarks=Shaposhnikov A.A.
+OriginalFilename=UniTerm
+ProductName=Unificated Terminal
+ProductVersion=1.0.0.0
+Comments=Not For Sale
+
+[HistoryLists\hlIncludePath]
+Count=13
+Item0=C:\Program Files\Borland\CBuilder6\Projects;..\..\Connections;..\SAnalyser;..\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\2013\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..\2008\UniTerm;..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item5=..\..\2008\Functions;..\..\2008\UniTerm;..\Functions;..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\Functions;..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item7=..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item8=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item9=D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item10=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item11=$(BCB)\include;$(BCB)\include\vcl
+Item12=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\SimpleDB;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=15
+Item0=C:\Program Files\Borland\CBuilder6\Projects;..\..\Connections;..\SAnalyser;..\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item1=..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item2=..\..\2013\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item3=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item4=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib
+Item5=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\..\2008\UniTerm;..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib
+Item7=..\..\2008\Functions;..\..\2008\UniTerm;..\Functions;..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item8=..\Functions;..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item10=C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item11=D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item12=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item13=$(BCB)\lib\obj;$(BCB)\lib
+Item14=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\SimpleDB;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=\
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=\
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

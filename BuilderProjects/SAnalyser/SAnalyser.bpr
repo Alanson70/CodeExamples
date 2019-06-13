@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="SAnalyser.exe"/>
+    <OBJFILES value="SAnalyser.obj AboutFormUnit.obj FreqParamFrameUnit.obj BandsUnit.obj 
+      RecordingFormUnit.obj AnalyserBaseFrameUnit.obj AnalyserMeterFrameUnit.obj 
+      ConnectFrameUnit.obj MainFormUnit.obj AnalyserViewerFrameUnit.obj 
+      ProfileDialogFormUnit.obj ..\Functions\Functions.obj 
+      ..\Functions\ApiFunctionsUnit.obj ..\Connections\OutputClient.obj 
+      ..\Connections\TcpClient.obj ..\Connections\TtyClient.obj 
+      ..\Connections\UdpClient.obj ..\Connections\Client.obj"/>
+    <RESFILES value="SAnalyser.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) AboutFormUnit.dfm FreqParamFrameUnit.dfm RecordingFormUnit.dfm 
+      AnalyserBaseFrameUnit.dfm AnalyserMeterFrameUnit.dfm ConnectFrameUnit.dfm 
+      MainFormUnit.dfm AnalyserViewerFrameUnit.dfm ProfileDialogFormUnit.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="tee.lib vclx.lib nmfast.lib inet.lib vclAbsDBb6.lib bdertl.lib vcldb.lib 
+      dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib vcldb.lib bdertl.lib vclAbsDBb6.lib inet.lib 
+      nmfast.lib vclx.lib tee.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb97axserver.bpi vclAbsDBb6.bpi"/>
+    <PATHCPP value=".;..\Functions;..\Functions;..\Connections;..\Connections;..\Connections;..\Connections;..\Connections"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="SAnalyser.cpp"/>
+    <INCLUDEPATH value="..\Connections;..\Functions;..\..\OutputClients;..\SA;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\Connections;..\Functions;..\..\OutputClients;..\SA;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib&quot;;&quot;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -D_DEBUG -I..\..\OutputClients -I..\SA 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I..\SAnalyser 
+      -I..\UniTerm -I..\..\2008\Functions -I$(BCB)\include -I$(BCB)\include\vcl 
+      -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="SAnalyser.res" FORMNAME="" UNITNAME="SAnalyser.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SAnalyser.cpp" FORMNAME="" UNITNAME="SAnalyser" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AboutFormUnit.cpp" FORMNAME="AboutForm" UNITNAME="AboutFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FreqParamFrameUnit.cpp" FORMNAME="FreqParamFrame" UNITNAME="FreqParamFrameUnit" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="BandsUnit.cpp" FORMNAME="" UNITNAME="BandsUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RecordingFormUnit.cpp" FORMNAME="RecordingForm" UNITNAME="RecordingFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AnalyserBaseFrameUnit.cpp" FORMNAME="AnalyserBaseFrame" UNITNAME="AnalyserBaseFrameUnit" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="AnalyserMeterFrameUnit.cpp" FORMNAME="AnalyserMeterFrame" UNITNAME="AnalyserMeterFrameUnit" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConnectFrameUnit.cpp" FORMNAME="ConnectFrame" UNITNAME="ConnectFrameUnit" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="MainFormUnit.cpp" FORMNAME="MainForm" UNITNAME="MainFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AnalyserViewerFrameUnit.cpp" FORMNAME="AnalyserViewerFrame" UNITNAME="AnalyserViewerFrameUnit" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="ProfileDialogFormUnit.cpp" FORMNAME="ProfileDialogForm" UNITNAME="ProfileDialogFormUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Functions\Functions.cpp" FORMNAME="" UNITNAME="Functions.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Functions\ApiFunctionsUnit.cpp" FORMNAME="" UNITNAME="ApiFunctionsUnit.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\OutputClient.cpp" FORMNAME="" UNITNAME="OutputClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\TcpClient.cpp" FORMNAME="" UNITNAME="TcpClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\TtyClient.cpp" FORMNAME="" UNITNAME="TtyClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\UdpClient.cpp" FORMNAME="" UNITNAME="UdpClient.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Connections\Client.cpp" FORMNAME="" UNITNAME="Client" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=1
+Release=1
+Build=12
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=Shaposhnikov A.A.
+FileDescription=Spectrum Analyser Program
+FileVersion=2.1.1.12
+InternalName=SPECTROS PROGRAM
+LegalCopyright=Shaposhnikov A.A.
+LegalTrademarks=Shaposhnikov A.A.
+OriginalFilename=SAnalyser
+ProductName=SPECTROS
+ProductVersion=1.0.0.0
+Comments=Not For Sale
+
+[HistoryLists\hlIncludePath]
+Count=16
+Item0=..\Connections;..\Functions;..\..\OutputClients;..\SA;C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\OutputClients;..\SA;C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item2=C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item5=..\..\2013\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item7=..\..\2008\UniTerm;..\..\2008\Functions;..\Functions;$(BCB)\include;$(BCB)\include\vcl
+Item8=..\..\2008\Functions;..\..\2008\UniTerm;..\Functions;..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item9=..\Functions;..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item10=..\..\2006\UniTerm;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item11=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item12=D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item13=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\ADO;$(BCB)\include;$(BCB)\include\vcl
+Item14=$(BCB)\include;$(BCB)\include\vcl
+Item15=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\SimpleDB;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=18
+Item0=..\Connections;..\Functions;..\..\OutputClients;..\SA;C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item1=..\..\OutputClients;..\SA;C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item2=C:\Program Files\Borland\CBuilder6\Projects;..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item3=..\SAnalyser;..\UniTerm;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item4=..\..\2015\SAnalyser;..\..\2008\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item5=..\..\2013\UniTerm;..\..\2015\SAnalyser;..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item6=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6
+Item7=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib
+Item8=..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\..\2008\UniTerm;..\..\2008\Functions;..\Functions;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\..\2008\Functions;..\..\2008\UniTerm;..\Functions;..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item11=..\Functions;..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item12=..\..\2006\UniTerm;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item13=C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\AbsoluteDB;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item14=D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item15=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\ADO;$(BCB)\lib\obj;$(BCB)\lib
+Item16=$(BCB)\lib\obj;$(BCB)\lib
+Item17=C:\Program Files\Borland\CBuilder6\Projects;D:\WORK\2005\SimpleDB;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=\
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=\
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=TEST &quot;175.0.0.37 8000&quot; &quot;SA&quot; &quot;SA&quot;
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=D:\WORK\Prog\2016\SAnalyser\SAnalyser.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
