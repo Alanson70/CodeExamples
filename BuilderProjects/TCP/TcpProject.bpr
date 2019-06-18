@@ -9,16 +9,14 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) ServerFormUnit.dfm ClientFormUnit.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="vclAbsDBb6.lib bdertl.lib vclx.lib qrpt.lib vcldb.lib EhLibB60.lib 
-      adortl.lib dbrtl.lib rtl.lib vcl.lib"/>
-    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib adortl.lib EhLibB60.lib vcldb.lib qrpt.lib 
-      vclx.lib bdertl.lib vclAbsDBb6.lib"/>
+    <LIBRARIES value="bdertl.lib vclx.lib qrpt.lib vcldb.lib adortl.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib adortl.lib vcldb.lib qrpt.lib vclx.lib bdertl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
       qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
       teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
       vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
       nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
-      indy.bpi bcb2kaxserver.bpi vclAbsDBb6.bpi EhLibB60.bpi"/>
+      indy.bpi bcb2kaxserver.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
@@ -27,10 +25,10 @@
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value=""/>
-    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <SYSDEFINES value="NO_STRICT"/>
     <MAINSOURCE value="TcpProject.cpp"/>
-    <INCLUDEPATH value="J:\Work\Prog\2018\TCP;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Program Files\Borland\CBuilder6\Components\EhLib\Include&quot;"/>
-    <LIBPATH value="J:\Work\Prog\2018\TCP;&quot;C:\Program Files\Borland\CBuilder6\Components\EhLib\Lib&quot;;&quot;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;J:\Work\Prog\2017\DBReport1;..\Components\EhLib\Lib;&quot;..\..\..\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
@@ -43,9 +41,9 @@
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
-    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
-    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
     <OTHERFILES value=""/>
   </LINKER>
   <FILELIST>
@@ -59,10 +57,10 @@
 
   <IDEOPTIONS>
 [Version Info]
-IncludeVerInfo=0
+IncludeVerInfo=1
 AutoIncBuild=0
-MajorVer=1
-MinorVer=0
+MajorVer=2
+MinorVer=1
 Release=0
 Build=0
 Debug=0
@@ -76,7 +74,7 @@ CodePage=1251
 [Version Info Keys]
 CompanyName=
 FileDescription=
-FileVersion=1.0.0.0
+FileVersion=2.1.0.0
 InternalName=
 LegalCopyright=
 LegalTrademarks=
@@ -86,17 +84,18 @@ ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
-Count=4
-Item0=J:\Work\Prog\2018\TCP;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Components\EhLib\Include
-Item1=C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Components\EhLib\Include
-Item2=C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl
-Item3=$(BCB)\include;$(BCB)\include\vcl
+Count=5
+Item0=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=J:\Work\Prog\2018\TCP;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Components\EhLib\Include
+Item2=C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Components\EhLib\Include
+Item3=C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
 Count=3
-Item0=J:\Work\Prog\2018\TCP;C:\Program Files\Borland\CBuilder6\Components\EhLib\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;..\Components\EhLib\Lib;..\..\..\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;$(BCB)\lib\obj;$(BCB)\lib
-Item1=C:\Program Files\Borland\CBuilder6\Components\EhLib\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;..\Components\EhLib\Lib;..\..\..\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;$(BCB)\lib\obj;$(BCB)\lib
-Item2=$(BCB)\lib\obj;$(BCB)\lib
+Item0=$(BCB)\lib\obj;$(BCB)\lib
+Item1=J:\Work\Prog\2018\TCP;C:\Program Files\Borland\CBuilder6\Components\EhLib\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;..\Components\EhLib\Lib;..\..\..\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder6\Components\EhLib\Lib;C:\Program Files\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;C:\Program Files\Borland\CBuilder6\Projects;J:\Work\Prog\2017\DBReport1;..\Components\EhLib\Lib;..\..\..\ComponentAce\AbsoluteDatabase\Lib\C++ Builder 6;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
