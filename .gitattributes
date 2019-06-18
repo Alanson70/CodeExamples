@@ -1,1 +1,2 @@
-*.md linguist-language=C++
+*.hpp linguist-language=C++
+*.dfm linguist-language=C++
